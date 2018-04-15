@@ -36,7 +36,7 @@ function register_block() {
 			'wp-i18n',
 			'wp-element',
 		),
-		filemtime( __DIR__ . "/$block_js" )
+		'0.0.1'
 	);
 
 	wp_register_style(
@@ -45,7 +45,7 @@ function register_block() {
 		array(
 			'wp-blocks',
 		),
-		filemtime( __DIR__ . "/$editor_css" )
+		'0.0.1'
 	);
 
 	wp_register_style(
@@ -54,7 +54,7 @@ function register_block() {
 		array(
 			'wp-blocks',
 		),
-		filemtime( __DIR__ . "/$style_css" )
+		'0.0.1'
 	);
 
 	register_block_type( 'gutenberg-i18n-block/block', array(
