@@ -57,6 +57,11 @@ function register_block() {
 		'0.0.1'
 	);
 
+	if ( ! function_exists( 'register_block_type' ) ) {
+		// Gutenberg is not active.
+		return;
+	}
+
 	register_block_type( 'gutenberg-i18n-block/block', array(
 		'editor_script' => 'gutenberg-i18n-block-editor',
 		'editor_style'  => 'gutenberg-i18n-block-editor',
