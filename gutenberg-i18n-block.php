@@ -16,7 +16,7 @@
   * Load all translations for our plugin from the MO file.
   */
 function load_textdomain() {
-	$result = load_plugin_textdomain( 'gutenberg-i18n-block', false, basename( __DIR__ ) . '/languages' );
+	load_plugin_textdomain( 'gutenberg-i18n-block', false, basename( __DIR__ ) . '/languages' );
 }
 
 add_action( 'init', __NAMESPACE__ . '\load_textdomain' );
