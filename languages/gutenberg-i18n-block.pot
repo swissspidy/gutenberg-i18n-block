@@ -1,0 +1,42 @@
+# Copyright (C) 2018 Gutenberg I18N Block
+# This file is distributed under the same license as the Gutenberg I18N Block package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Gutenberg I18N Block 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenberg-i18n-block\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2018-04-15T07:24:19+00:00\n"
+"PO-Revision-Date: 2018-04-15T07:24:19+00:00\n"
+"X-Domain: gutenberg-i18n-block\n"
+
+#: languages/gutenberg-i18n-block-translations.php:5
+msgid "I18N Block"
+msgstr ""
+
+#: languages/gutenberg-i18n-block-translations.php:8
+msgid "Hello from the editor!"
+msgstr ""
+
+#. Plugin Name of the plugin
+msgid "Gutenberg I18N Block"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://github.com/swissspidy/gutenberg-i18n-block"
+msgstr ""
+
+#. Description of the plugin
+msgid "Gutenberg block to demo internationalization functionality."
+msgstr ""
+
+#. Author of the plugin
+msgid "Pascal Birchler (@swissspidy)"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://pascalbirchler.com"
+msgstr ""

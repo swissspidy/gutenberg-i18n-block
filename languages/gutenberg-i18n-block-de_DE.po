@@ -1,0 +1,50 @@
+# Copyright (C) 2018 Gutenberg I18N Block
+# This file is distributed under the same license as the Gutenberg I18N Block package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Gutenberg I18N Block 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenberg-i18n-"
+"block\n"
+"POT-Creation-Date: 2018-04-15T07:24:19+00:00\n"
+"PO-Revision-Date: 2018-04-15 08:24+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: gutenberg-i18n-block\n"
+"X-Generator: Poedit 2.0.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: languages/gutenberg-i18n-block-translations.php:5
+msgid "I18N Block"
+msgstr "I18N Block (DE)"
+
+#: languages/gutenberg-i18n-block-translations.php:8
+msgid "Hello from the editor!"
+msgstr "Hallo aus dem Editor!"
+
+#. Plugin Name of the plugin
+msgid "Gutenberg I18N Block"
+msgstr "Gutenberg I18N Block"
+
+#. Plugin URI of the plugin
+msgid "https://github.com/swissspidy/gutenberg-i18n-block"
+msgstr "https://github.com/swissspidy/gutenberg-i18n-block"
+
+#. Description of the plugin
+msgid "Gutenberg block to demo internationalization functionality."
+msgstr ""
+"Gutenberg Block um Internationalisierungsmöglichkeiten zu demonstrieren."
+
+#. Author of the plugin
+msgid "Pascal Birchler (@swissspidy)"
+msgstr "Pascal Birchler (@swissspidy)"
+
+#. Author URI of the plugin
+msgid "https://pascalbirchler.com"
+msgstr "https://pascalbirchler.com"
+
+#~ msgid "Hello from the saved content!"
+#~ msgstr "Hallo aus dem gespeicherten Inhalt!"
