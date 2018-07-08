@@ -2,24 +2,16 @@
 # This file is distributed under the same license as the Gutenberg I18N Block package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Gutenberg I18N Block 0.2.0\n"
+"Project-Id-Version: Gutenberg I18N Block 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenberg-i18n-block\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2018-07-08T10:58:06+00:00\n"
-"PO-Revision-Date: 2018-07-08T10:58:06+00:00\n"
+"POT-Creation-Date: 2018-07-08T11:18:29+00:00\n"
+"PO-Revision-Date: 2018-07-08T11:18:29+00:00\n"
 "X-Domain: gutenberg-i18n-block\n"
-
-#: block/src/block.js:29
-msgid "I18N Block"
-msgstr ""
-
-#: block/src/block.js:63
-msgid "Hello from the editor!"
-msgstr ""
 
 #. Plugin Name of the plugin
 msgid "Gutenberg I18N Block"
@@ -39,4 +31,12 @@ msgstr ""
 
 #. Author URI of the plugin
 msgid "https://pascalbirchler.com"
+msgstr ""
+
+#: block/src/block.js:29
+msgid "I18N Block"
+msgstr ""
+
+#: block/src/block.js:63
+msgid "Hello from the editor!"
 msgstr ""

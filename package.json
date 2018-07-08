@@ -4,7 +4,6 @@
   "main": "block/block.js",
   "author": "Pascal Birchler",
   "devDependencies": {
-    "@wordpress/babel-plugin-makepot": "^1.0.0",
     "@wordpress/babel-preset-default": "^1.1.2",
     "@wordpress/i18n": "^1.1.0",
     "babel-cli": "^6.26.0",
@@ -14,18 +13,10 @@
   "babel": {
     "presets": [
       "@wordpress/default"
-    ],
-    "plugins": [
-      [
-        "@wordpress/babel-plugin-makepot",
-        {
-          "output": "languages/gutenberg-i18n-block-js.pot"
-        }
-      ]
     ]
   },
   "scripts": {
     "build": "babel block/src/block.js -o block/block.js",
-    "makepot": "wp i18n make-pot . --merge=languages/gutenberg-i18n-block-js.pot --skip-js"
+    "makepot": "wp i18n make-pot . --exclude=block/block.js"
   }
 }
