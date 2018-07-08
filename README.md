@@ -14,7 +14,7 @@ This has the additional benefit that the resulting POT file contains the correct
 
 ## Plugins hosted on WordPress.org
 
-If you want to build upon this proof-of-concept plugin for a project that is hosted on the WordPress.org Plugin Directory, please check out the [https://github.com/swissspidy/gutenberg-i18n-block/tree/pot-to-php](pot-to-php) branch in the meantime.
+If you want to build upon this proof-of-concept plugin for a project that is hosted on the WordPress.org Plugin Directory, please check out the [pot-to-php](https://github.com/swissspidy/gutenberg-i18n-block/tree/pot-to-php) branch in the meantime.
 
 WordPress.org does not yet fully support JavaScript string extraction like this, and only scans PHP files. That's why we need to generate a fake PHP file containing these translatable strings extracted from JS.
 
@@ -24,9 +24,9 @@ Not everyone uses Babel in their JavaScript build process. The good thing is, yo
 
 There are two example branches to demonstrate its use:
 
-* [https://github.com/swissspidy/gutenberg-i18n-block/tree/no-babel-makepot](no-babel-makepot)
+* [no-babel-makepot](https://github.com/swissspidy/gutenberg-i18n-block/tree/no-babel-makepot)
 In this branch, we don't need `@wordpress/babel-plugin-makepot` anymore as we just use WP-CLI for the string extraction. Neat!
-* [https://github.com/swissspidy/gutenberg-i18n-block/tree/no-babel](no-babel)
+* [no-babel](https://github.com/swissspidy/gutenberg-i18n-block/tree/no-babel)
 Since this block is rather simple and we don't actually need Babel's transpiler features, we can use the JS straight away.
 
 ## Usage
