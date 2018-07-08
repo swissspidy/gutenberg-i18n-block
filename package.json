@@ -26,7 +26,6 @@
   },
   "scripts": {
     "build": "babel block/src/block.js -o block/block.js",
-    "pot-to-php": "pot-to-php languages/gutenberg-i18n-block-js.pot languages/gutenberg-i18n-block-translations.php gutenberg-i18n-block",
-    "makepot": "wp i18n make-pot ."
+    "makepot": "wp i18n make-pot . --merge=languages/gutenberg-i18n-block-js.pot --skip-js"
   }
 }
