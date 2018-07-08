@@ -70,7 +70,7 @@ function register_block() {
 
 	/*
 	 * Pass already loaded translations to our JavaScript.
-	 * 
+	 *
 	 * This happens _before_ our JavaScript runs, afterwards it's too late.
 	 */
 	wp_add_inline_script(
