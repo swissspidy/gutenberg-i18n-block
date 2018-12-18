@@ -1,31 +1,33 @@
 {
-  "name": "gutenberg-i18n-block",
-  "version": "0.1.0",
-  "main": "block/block.js",
-  "author": "Pascal Birchler",
-  "devDependencies": {
-    "@wordpress/babel-plugin-makepot": "^1.0.0",
-    "@wordpress/babel-preset-default": "^1.1.2",
-    "@wordpress/i18n": "^1.1.0",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.25.0",
-    "babel-loader": "^7.1.4"
-  },
-  "babel": {
-    "presets": [
-      "@wordpress/default"
-    ],
-    "plugins": [
-      [
-        "@wordpress/babel-plugin-makepot",
-        {
-          "output": "languages/gutenberg-i18n-block-js.pot"
-        }
-      ]
-    ]
-  },
-  "scripts": {
-    "build": "babel block/src/block.js -o block/block.js",
-    "makepot": "wp i18n make-pot . --merge=languages/gutenberg-i18n-block-js.pot --skip-js"
-  }
+	"name": "gutenberg-i18n-block",
+	"version": "0.1.0",
+	"main": "block/block.js",
+	"private": true,
+	"author": "Pascal Birchler",
+	"devDependencies": {
+		"@wordpress/babel-plugin-makepot": "^2.1.2",
+		"@wordpress/babel-preset-default": "^3.0.1",
+		"@wordpress/i18n": "^3.1.0",
+		"@babel/cli": "^7.2.0",
+		"@babel/core": "^7.2.2"
+	},
+	"babel": {
+		"presets": [
+			"@wordpress/default"
+		],
+		"plugins": [
+			[
+				"@wordpress/babel-plugin-makepot",
+				{
+					"output": "languages/gutenberg-i18n-block-js.pot"
+				}
+			]
+		]
+	},
+	"scripts": {
+		"build:js": "babel block/src/block.js -o block/block.js",
+		"build:pot": "wp i18n make-pot . --merge=languages/gutenberg-i18n-block-js.pot --skip-js",
+		"build:json": "wp i18n make-json languages",
+		"build": "npm run build:js && npm run build:pot && npm run build:json"
+	}
 }

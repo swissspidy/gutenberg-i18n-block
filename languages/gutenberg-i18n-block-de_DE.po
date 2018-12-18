@@ -1,27 +1,27 @@
-# Copyright (C) 2018 Gutenberg I18N Block
-# This file is distributed under the same license as the Gutenberg I18N Block package.
+# Copyright (C) 2018 Pascal Birchler (@swissspidy)
+# This file is distributed under the same license as the Gutenberg I18N Block plugin.
 msgid ""
 msgstr ""
 "Project-Id-Version: Gutenberg I18N Block 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenberg-i18n-"
 "block\n"
-"POT-Creation-Date: 2018-04-15T07:24:19+00:00\n"
-"PO-Revision-Date: 2018-04-15 08:24+0100\n"
-"Last-Translator: \n"
 "Language-Team: \n"
-"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2018-12-18T15:43:08+00:00\n"
+"PO-Revision-Date: 2018-12-18 17:02+0100\n"
+"X-Generator: Poedit 2.1\n"
 "X-Domain: gutenberg-i18n-block\n"
-"X-Generator: Poedit 2.0.4\n"
+"Last-Translator: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de_DE\n"
 
-#: languages/gutenberg-i18n-block-translations.php:5
+#: block/src/block.js:29
 msgid "I18N Block"
-msgstr "I18N Block (DE)"
+msgstr "I18N Block"
 
-#: languages/gutenberg-i18n-block-translations.php:8
+#: block/src/block.js:63
 msgid "Hello from the editor!"
 msgstr "Hallo aus dem Editor!"
 
@@ -45,6 +45,3 @@ msgstr "Pascal Birchler (@swissspidy)"
 #. Author URI of the plugin
 msgid "https://pascalbirchler.com"
 msgstr "https://pascalbirchler.com"
-
-#~ msgid "Hello from the saved content!"
-#~ msgstr "Hallo aus dem gespeicherten Inhalt!"

@@ -39,6 +39,8 @@ function register_block() {
 		'0.0.1'
 	);
 
+	wp_set_script_translations( 'gutenberg-i18n-block-editor', 'gutenberg-i18n-block' );
+
 	wp_register_style(
 		'gutenberg-i18n-block-editor',
 		plugins_url( 'block/editor.css', __FILE__ ),
@@ -67,17 +69,6 @@ function register_block() {
 		'editor_style'  => 'gutenberg-i18n-block-editor',
 		'style'         => 'gutenberg-i18n-block',
 	) );
-
-	/*
-	 * Pass already loaded translations to our JavaScript.
-	 *
-	 * This happens _before_ our JavaScript runs, afterwards it's too late.
-	 */
-	wp_add_inline_script(
-		'gutenberg-i18n-block-editor',
-		'wp.i18n.setLocaleData( ' . json_encode( gutenberg_get_jed_locale_data( 'gutenberg-i18n-block' ) ) . ', "gutenberg-i18n-block" );',
-		'before'
-	);
 }
 
 add_action( 'init', __NAMESPACE__ . '\register_block', 20 );
