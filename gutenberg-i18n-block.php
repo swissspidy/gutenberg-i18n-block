@@ -7,14 +7,14 @@
  * Author URI:  https://pascalbirchler.com
  * Text Domain: gutenberg-i18n-block
  * Domain Path: /languages
- * Version:     0.1.0
+ * Version:     0.2.0
  */
 
- namespace Swissspidy\Gutenberg\Blocks\I18n;
+namespace Swissspidy\Gutenberg\Blocks\I18n;
 
- /**
-  * Load all translations for our plugin from the MO file.
-  */
+/**
+ * Load all translations for our plugin from the MO file.
+ */
 function load_textdomain() {
 	load_plugin_textdomain( 'gutenberg-i18n-block', false, basename( __DIR__ ) . '/languages' );
 }
@@ -28,41 +28,36 @@ add_action( 'init', __NAMESPACE__ . '\load_textdomain' );
  * Passes translations to JavaScript.
  */
 function register_block() {
+	$script_dependencies = file_exists( __DIR__ . '/build/index.deps.json' )
+		? json_decode( file_get_contents( __DIR__ . '/build/index.deps.json' ), false )
+		: array();
+
 	wp_register_script(
 		'gutenberg-i18n-block-editor',
-		plugins_url( 'block/block.js', __FILE__ ),
-		array(
-			'wp-blocks',
-			'wp-i18n',
-			'wp-element',
-		),
-		'0.0.1'
+		plugins_url( 'dist/index.js', __FILE__ ),
+		$script_dependencies,
+		'0.2.0'
 	);
 
 	wp_set_script_translations( 'gutenberg-i18n-block-editor', 'gutenberg-i18n-block' );
 
 	wp_register_style(
 		'gutenberg-i18n-block-editor',
-		plugins_url( 'block/editor.css', __FILE__ ),
+		plugins_url( 'assets/editor.css', __FILE__ ),
 		array(
 			'wp-blocks',
 		),
-		'0.0.1'
+		'0.2.0'
 	);
 
 	wp_register_style(
 		'gutenberg-i18n-block',
-		plugins_url( 'block/style.css', __FILE__ ),
+		plugins_url( 'assets/style.css', __FILE__ ),
 		array(
 			'wp-blocks',
 		),
-		'0.0.1'
+		'0.2.0'
 	);
-
-	if ( ! function_exists( 'register_block_type' ) ) {
-		// Gutenberg is not active.
-		return;
-	}
 
 	register_block_type( 'gutenberg-i18n-block/block', array(
 		'editor_script' => 'gutenberg-i18n-block-editor',

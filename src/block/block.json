@@ -1,0 +1,9 @@
+{
+	"name": "gutenberg-i18n-block/block",
+	"category": "common",
+	"attributes": {
+		"content": {
+			"type": "string"
+		}
+	}
+}

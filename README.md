@@ -1,29 +1,20 @@
 # Gutenberg I18N Block
 
-This is an example WordPress plugin to demonstrate how to build fully internationalised an localised blocks for the new editor.
+This is an example WordPress plugin to demonstrate how to build fully internationalised an localised blocks for the new block editor in WordPress.
 
 ## Prerequisites
 
 To install all `npm` dependencies in this repository, run `npm install`.
 
-Also, you need to have [WP-CLI](https://wp-cli.org/) 2.1.0 or higher installed. To update WP-CLI run `wp cli update`.
+Also, you need to have [WP-CLI](https://wp-cli.org/) 2.2.0 or higher installed. To update WP-CLI run `wp cli update`.
 
 This has the additional benefit that the resulting POT file contains the correct references to the original JavaScript files containing translatable strings.
 
-## Plugins hosted on WordPress.org
-
-If you want to build upon this proof-of-concept plugin for a project that is hosted on the WordPress.org Plugin Directory, please check out the [dotorg](https://github.com/swissspidy/gutenberg-i18n-block/tree/dotorg) branch for information.
-
 ## Not a fan of Babel?
 
-Not everyone uses Babel in their JavaScript build process. The good thing is, you don't have to use it just for the sake of internationalization! WP-CLI has got you covered.
+Not everyone uses Babel in their JavaScript build process. The good thing is, you don't have to use it just for the sake of internationalization!
 
-There are two example branches to demonstrate its use:
-
-* [no-babel-makepot](https://github.com/swissspidy/gutenberg-i18n-block/tree/no-babel-makepot)
-In this branch, we don't need `@wordpress/babel-plugin-makepot` anymore as we just use WP-CLI for the string extraction. Neat!
-* [no-babel](https://github.com/swissspidy/gutenberg-i18n-block/tree/no-babel)
-Since this block is rather simple and we don't actually need Babel's transpiler features, we can use the JS straight away.
+WP-CLI has got you covered. Simply run WP-CLI's `i18n make-pot` command against your final JavaScript files to extract all translatable strings.
 
 ## Usage
 

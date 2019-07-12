@@ -1,15 +1,15 @@
 {
 	"name": "gutenberg-i18n-block",
-	"version": "0.1.0",
-	"main": "block/block.js",
 	"private": true,
 	"author": "Pascal Birchler",
 	"devDependencies": {
-		"@wordpress/babel-plugin-makepot": "^2.1.2",
-		"@wordpress/babel-preset-default": "^3.0.1",
-		"@wordpress/i18n": "^3.1.0",
-		"@babel/cli": "^7.2.0",
-		"@babel/core": "^7.2.2"
+		"@babel/cli": "^7.5.0",
+		"@babel/core": "^7.5.4",
+		"@wordpress/babel-plugin-makepot": "^3.1.0",
+		"@wordpress/babel-preset-default": "^4.3.0",
+		"@wordpress/blocks": "^6.4",
+		"@wordpress/i18n": "^3.5.0",
+		"@wordpress/scripts": "^3.3"
 	},
 	"babel": {
 		"presets": [
@@ -25,9 +25,11 @@
 		]
 	},
 	"scripts": {
-		"build:js": "babel block/src/block.js -o block/block.js",
-		"build:pot": "wp i18n make-pot . --merge=languages/gutenberg-i18n-block-js.pot --skip-js",
+		"build:pot": "wp i18n make-pot --merge=languages/gutenberg-i18n-block-js.pot --skip-js .",
+		"build:pot:wpcli": "wp i18n make-pot --exclude=build . languages/gutenberg-i18n-block-wp-cli.pot",
+		"build:pot:wpcli-dotorg": "wp i18n make-pot --exclude=src . languages/gutenberg-i18n-block-wp-cli-dotorg.pot",
 		"build:json": "wp i18n make-json languages",
-		"build": "npm run build:js && npm run build:pot && npm run build:json"
+		"build:js": "wp-scripts build",
+		"lint:js": "wp-scripts lint-js ."
 	}
 }

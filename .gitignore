@@ -1,2 +1,3 @@
-node_modules/
-languages/gutenberg-i18n-block-js.pot
+/node_modules
+languages/**.pot
+/build

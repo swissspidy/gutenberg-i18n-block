@@ -1,25 +1,40 @@
-# Copyright (C) 2018 Pascal Birchler (@swissspidy)
+# Copyright (C) 2019 Pascal Birchler (@swissspidy)
 # This file is distributed under the same license as the Gutenberg I18N Block plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Gutenberg I18N Block 0.1.0\n"
+"Project-Id-Version: Gutenberg I18N Block 0.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenberg-i18n-block\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2018-12-18T15:43:08+00:00\n"
+"POT-Creation-Date: 2019-07-12T10:51:09+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.1.0-alpha-c44d019\n"
+"X-Generator: WP-CLI 2.2.0\n"
 "X-Domain: gutenberg-i18n-block\n"
 
-#: block/src/block.js:29
+#: src/block/edit.js:12
+msgid "Hello from the editor!"
+msgstr ""
+
+#. %s: number of registered block types
+#: src/block/edit.js:17
+msgid "There is %s registered block type"
+msgid_plural "There are %s registered block types"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/block/index.js:18
 msgid "I18N Block"
 msgstr ""
 
-#: block/src/block.js:63
-msgid "Hello from the editor!"
+#: src/block/index.js:19
+msgid "Start with the building block of all narrative."
+msgstr ""
+
+#: src/block/index.js:22
+msgid "text"
 msgstr ""
 
 #. Plugin Name of the plugin
