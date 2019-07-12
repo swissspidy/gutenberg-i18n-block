@@ -34,12 +34,16 @@ function register_block() {
 
 	wp_register_script(
 		'gutenberg-i18n-block-editor',
-		plugins_url( 'dist/index.js', __FILE__ ),
+		plugins_url( 'build/index.js', __FILE__ ),
 		$script_dependencies,
 		'0.2.0'
 	);
 
-	wp_set_script_translations( 'gutenberg-i18n-block-editor', 'gutenberg-i18n-block' );
+	wp_set_script_translations(
+		'gutenberg-i18n-block-editor',
+		'gutenberg-i18n-block',
+		plugin_dir_path( __FILE__ ) . 'languages'
+	);
 
 	wp_register_style(
 		'gutenberg-i18n-block-editor',

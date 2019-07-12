@@ -1,0 +1,31 @@
+{
+    "translation-revision-date": "2019-07-12 16:09+0200",
+    "generator": "WP-CLI\/2.2.0",
+    "source": "src\/block\/edit.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "de_DE",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Hello from the editor!": [
+                "Hallo aus dem Editor!"
+            ],
+            "There is %s registered block type": [
+                "Es gibt %s registrierten Block Type",
+                "Es gibt %s registrierte Block Types"
+            ],
+			"I18N Block": [
+				"I18N Block"
+			],
+			"Start with the building block of all narrative.": [
+				"Beginne mit dem Baustein aller Geschichten."
+			],
+			"text": [
+				"text"
+			]
+        }
+    }
+}

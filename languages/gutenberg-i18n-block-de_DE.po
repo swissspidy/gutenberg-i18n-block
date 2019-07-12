@@ -1,0 +1,61 @@
+# Copyright (C) 2019 Pascal Birchler (@swissspidy)
+# This file is distributed under the same license as the Gutenberg I18N Block plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Gutenberg I18N Block 0.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenberg-i18n-"
+"block\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-07-12T10:51:09+00:00\n"
+"PO-Revision-Date: 2019-07-12 16:09+0200\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Domain: gutenberg-i18n-block\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de_DE\n"
+
+#: src/block/edit.js:12
+msgid "Hello from the editor!"
+msgstr "Hallo aus dem Editor!"
+
+#. %s: number of registered block types
+#: src/block/edit.js:17
+msgid "There is %s registered block type"
+msgid_plural "There are %s registered block types"
+msgstr[0] "Es gibt %s registrierten Block Type"
+msgstr[1] "Es gibt %s registrierte Block Types"
+
+#: src/block/index.js:18
+msgid "I18N Block"
+msgstr "I18N Block"
+
+#: src/block/index.js:19
+msgid "Start with the building block of all narrative."
+msgstr "Beginne mit dem Baustein aller Geschichten."
+
+#: src/block/index.js:22
+msgid "text"
+msgstr "text"
+
+#. Plugin Name of the plugin
+msgid "Gutenberg I18N Block"
+msgstr "Gutenberg I18N Block"
+
+#. Plugin URI of the plugin
+msgid "https://github.com/swissspidy/gutenberg-i18n-block"
+msgstr "https://github.com/swissspidy/gutenberg-i18n-block"
+
+#. Description of the plugin
+msgid "Gutenberg block to demo internationalization functionality."
+msgstr "Gutenberg Block um Internationalisierung zu demonstrieren."
+
+#. Author of the plugin
+msgid "Pascal Birchler (@swissspidy)"
+msgstr "Pascal Birchler (@swissspidy)"
+
+#. Author URI of the plugin
+msgid "https://pascalbirchler.com"
+msgstr "https://pascalbirchler.com"
