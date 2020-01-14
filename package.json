@@ -7,7 +7,7 @@
 		"@babel/core": "^7.8.3",
 		"@wordpress/babel-plugin-makepot": "^3.3.0",
 		"@wordpress/babel-preset-default": "^4.9.0",
-		"@wordpress/blocks": "^6.9",
+		"@wordpress/blocks": "^6.10",
 		"@wordpress/i18n": "^3.8.0",
 		"@wordpress/scripts": "^6.2"
 	},
