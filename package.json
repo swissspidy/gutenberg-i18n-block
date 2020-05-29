@@ -9,7 +9,7 @@
 		"@wordpress/babel-preset-default": "^4.14.0",
 		"@wordpress/blocks": "^6.17",
 		"@wordpress/i18n": "^3.13.0",
-		"@wordpress/scripts": "^9.1"
+		"@wordpress/scripts": "^10.0"
 	},
 	"babel": {
 		"presets": [
