@@ -4,7 +4,7 @@
 	"author": "Pascal Birchler",
 	"devDependencies": {
 		"@babel/cli": "^7.10.5",
-		"@babel/core": "^7.10.5",
+		"@babel/core": "^7.11.0",
 		"@wordpress/babel-plugin-makepot": "^3.7.0",
 		"@wordpress/babel-preset-default": "^4.17.0",
 		"@wordpress/blocks": "^6.20",
