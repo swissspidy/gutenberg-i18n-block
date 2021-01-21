@@ -6,7 +6,7 @@
 		"@babel/cli": "^7.12.10",
 		"@babel/core": "^7.12.10",
 		"@wordpress/babel-plugin-makepot": "^3.10.0",
-		"@wordpress/babel-preset-default": "^4.20.0",
+		"@wordpress/babel-preset-default": "^5.0.0",
 		"@wordpress/blocks": "^6.25",
 		"@wordpress/i18n": "^3.17.0",
 		"@wordpress/scripts": "^9.1"
