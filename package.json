@@ -3,7 +3,7 @@
 	"private": true,
 	"author": "Pascal Birchler",
 	"devDependencies": {
-		"@babel/cli": "^7.13.0",
+		"@babel/cli": "^7.13.10",
 		"@babel/core": "^7.13.10",
 		"@wordpress/babel-plugin-makepot": "^3.10.0",
 		"@wordpress/babel-preset-default": "^4.20.0",
