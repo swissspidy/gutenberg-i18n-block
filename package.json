@@ -5,7 +5,7 @@
 	"devDependencies": {
 		"@babel/cli": "^7.13.14",
 		"@babel/core": "^7.13.14",
-		"@wordpress/babel-plugin-makepot": "^3.10.0",
+		"@wordpress/babel-plugin-makepot": "^4.1.1",
 		"@wordpress/babel-preset-default": "^4.20.0",
 		"@wordpress/blocks": "^6.25",
 		"@wordpress/i18n": "^3.19.0",
